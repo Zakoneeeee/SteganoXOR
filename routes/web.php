@@ -23,3 +23,13 @@ Route::middleware(['auth'])->group(function () {
 
 // Memuat rute bawaan Laravel Breeze (Login, Register, dll)
 require __DIR__.'/auth.php';
+
+// Rute khusus untuk mem-bypass pemblokiran file CSS di Vercel
+Route::get('/css/style.css', function () {
+    return response()->file(public_path('css/style.css'), ['Content-Type' => 'text/css']);
+});
+
+// Rute khusus untuk mem-bypass pemblokiran file JS di Vercel
+Route::get('/js/script.js', function () {
+    return response()->file(public_path('js/script.js'), ['Content-Type' => 'application/javascript']);
+});

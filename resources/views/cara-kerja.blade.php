@@ -29,7 +29,7 @@
 <body class="bg-light">
     @include('partials.navbar')
 
-    <div class="container py-5">
+    <div class="container py-5" style="color: var(, #198754);">
         <div class="text-center mb-5">
             <h1 class="fw-bold" style="color: var(--primary-color, #198754);">Bagaimana SteganoXOR Bekerja?</h1>
             <p class="text-muted fs-5">Mengamankan pesan rahasia menggunakan perpaduan Enkripsi XOR dan Steganografi LSB.</p>
