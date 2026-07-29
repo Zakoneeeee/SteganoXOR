@@ -173,7 +173,7 @@ function decodeMessage() {
   $(".binary-decode").fadeIn();
 
   // === BAGIAN PENYIMPANAN RIWAYAT DECODE ===
-  const fileInput = document.querySelector("input[name=baseFile]");
+  const fileInput = document.querySelector("input[name=decodeFile]");
   const fileName = fileInput && fileInput.files.length > 0 ? fileInput.files[0].name : "unknown.png";
   
   
